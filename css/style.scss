@@ -1,0 +1,155 @@
+$pagewidth: 980px;
+$pagemargin: 250px;
+$lightgrey: #838583;
+$darkgrey: #343534;
+$logocolour1: #5abfcf;
+$logocolour2: #93d1de;
+$logocolour3: #1693af;
+
+html, body {
+	height: 100%;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+#logo {
+	display: none;
+}
+
+body {
+	background: $lightgrey;
+}
+
+#body-container {
+	margin: 0 auto;
+	width: $pagewidth;
+	padding-top: 50px;
+}
+
+#page {
+	background: url('../images/page-bg.png') top left no-repeat $darkgrey;
+	border: 1px solid #000;
+	padding: 30px 0;
+}
+
+#site-name {
+	margin: 0 0 0 $pagemargin;
+	font-family: 'Museo300', Helvetica, arial, sans-serif;
+	height: 140px;
+	a {
+		display: block;
+		width: 360px;
+		padding: 20px 0 0 0;
+		font-size: 70px;
+		color: #fff;
+		text-decoration: none;		
+	}
+	div.imagereplacement {
+		position: absolute;
+		width: 360px;
+		height: 112px;
+		a {
+			padding: 112px 0 0 0;
+			height: 0;
+			overflow: hidden;
+			background: url('../images/logo.png') top left no-repeat;
+		}
+	}	
+}
+
+#navigation {
+	position: absolute;
+}
+#main-menu {
+	position: relative;
+	top: -205px;
+	width: $pagewidth;
+	
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		float: right;
+		list-style: none;
+		font-family: 'Museo500', Helvetica, arial, sans-serif;
+		font-size: 18px;
+		padding: 0 13px;
+		border-right: 1px solid #606160;
+	}
+	li:first-child {
+		border-right: none;
+	}
+	li a {
+		text-decoration: none;
+		color: $darkgrey;
+	}
+	li a:hover {
+		color: $logocolour1;
+	}
+}
+
+
+
+.content {	
+	line-height: 1.4em;
+}
+
+.node-type-homepage {
+	#content-header h1 {
+		display: none;
+	}
+	.field-name-field-welcome {
+		margin: 0 20px 0 $pagemargin;
+		min-height: 200px;
+		font-family: 'Museo300', Helvetica, arial, sans-serif;
+		color: #fff;
+		font-size: 1.1em;
+		line-height: 1.6em;
+	}
+}
+
+ul.tabs {
+	position: relative;
+	top: -163px;
+	width: $pagewidth;
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+	li {		
+		float: right;
+	}
+	li a {
+		background: $lightgrey;
+		border: 1px solid #000;
+		color: $darkgrey;
+	}
+	li a.active {
+		background: none;
+		border: none;
+		color: $lightgrey;
+	}
+}
+
+
+
+@font-face {
+    font-family: 'Museo300';
+    src: url('../fonts/Museo300-Regular-webfont.eot');
+    src: url('../fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo300-Regular-webfont.woff') format('woff'),
+         url('../fonts/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Museo300-Regular-webfont.svg#Museo300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo500';
+    src: url('../fonts/Museo500-Regular-webfont.eot');
+    src: url('../fonts/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo500-Regular-webfont.woff') format('woff'),
+         url('../fonts/Museo500-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Museo500-Regular-webfont.svg#Museo500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

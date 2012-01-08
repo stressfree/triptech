@@ -1,0 +1,17 @@
+Triptech Drupal 7 theme
+==========================
+
+This is the Drupal 7 theme for the Triptech website (http://www.triptech.net).
+
+Recommended modules
+-------------------
+
+- backup_migrate
+- google_analytics
+- pathauto
+- site_verify
+- token
+- field_group
+- ctools
+- wysiwyg
+- xmlsitemap
