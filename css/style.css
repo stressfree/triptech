@@ -1,12 +1,33 @@
 html, body {
   height: 100%;
-  font-family: Helvetica, arial, sans-serif; }
+  font-family: Helvetica, arial, sans-serif;
+  background: #838583; }
+
+h1, h2, h6 {
+  font-family: 'Museo300', Helvetica, arial, sans-serif;
+  color: #343534; }
+
+h3, h4, h5 {
+  font-family: 'Museo500', Helvetica, arial, sans-serif;
+  color: #343534; }
+
+h3 {
+  font-size: 1.4em; }
+
+h4 {
+  font-size: 1.2em; }
+
+h5, h6 {
+  font-size: 1em; }
+
+a {
+  color: inherit; }
+
+a:hover {
+  color: #094856; }
 
 #logo {
   display: none; }
-
-body {
-  background: #838583; }
 
 #body-container {
   margin: 0 auto;
@@ -19,7 +40,7 @@ body {
   padding: 30px 0; }
 
 #site-name {
-  margin: 0 0 0 250px;
+  margin: 0 0 0 240px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   height: 140px; }
   #site-name a {
@@ -44,7 +65,7 @@ body {
 
 #main-menu {
   position: relative;
-  top: -205px;
+  top: -203px;
   width: 980px; }
   #main-menu ul {
     margin: 0;
@@ -56,13 +77,38 @@ body {
     font-size: 18px;
     padding: 0 13px;
     border-right: 1px solid #606160; }
+    #main-menu li a {
+      text-decoration: none;
+      color: #343534; }
+    #main-menu li a:hover {
+      color: #5abfcf; }
   #main-menu li:first-child {
     border-right: none; }
-  #main-menu li a {
-    text-decoration: none;
-    color: #343534; }
-  #main-menu li a:hover {
-    color: #5abfcf; }
+
+#footer {
+  border-top: 1px solid #838583;
+  margin: 40px 15px 0 15px;
+  padding: 20px 0 30px 0;
+  font-family: Helvetica, arial, sans-serif;
+  color: #838583;
+  font-size: 0.8em;
+  clear: both; }
+  #footer #block-menu-menu-footer-menu ul {
+    margin: 0;
+    padding: 0; }
+  #footer #block-menu-menu-footer-menu li {
+    float: right;
+    list-style: none;
+    padding: 0 9px;
+    border-right: 1px solid #606160; }
+    #footer #block-menu-menu-footer-menu li a {
+      color: #838583;
+      text-decoration: none; }
+    #footer #block-menu-menu-footer-menu li a:hover {
+      text-decoration: underline;
+      color: #5abfcf; }
+  #footer #block-menu-menu-footer-menu li:first-child {
+    border-right: none; }
 
 .content {
   line-height: 1.4em; }
@@ -70,12 +116,35 @@ body {
 .node-type-homepage #content-header h1 {
   display: none; }
 .node-type-homepage .field-name-field-welcome {
-  margin: 0 20px 0 250px;
+  margin: 0 30px 40px 240px;
   min-height: 200px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   color: #fff;
   font-size: 1.1em;
   line-height: 1.6em; }
+.node-type-homepage .group_aboutus, .node-type-homepage .group_services, .node-type-homepage .group_contactus {
+  width: 297px;
+  min-height: 265px;
+  float: left;
+  margin: 0 7px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  padding: 170px 0 0 0; }
+  .node-type-homepage .group_aboutus .field-items, .node-type-homepage .group_services .field-items, .node-type-homepage .group_contactus .field-items {
+    margin: 15px; }
+  .node-type-homepage .group_aboutus h3 a, .node-type-homepage .group_services h3 a, .node-type-homepage .group_contactus h3 a {
+    text-decoration: none; }
+  .node-type-homepage .group_aboutus h3 a:hover, .node-type-homepage .group_services h3 a:hover, .node-type-homepage .group_contactus h3 a:hover {
+    text-decoration: underline; }
+.node-type-homepage .group_aboutus {
+  background: url("../images/about-us.png") top right no-repeat #5abfcf;
+  margin-left: 25px; }
+.node-type-homepage .group_services {
+  background: url("../images/services.png") top right no-repeat #93d1de; }
+.node-type-homepage .group_contactus {
+  background: url("../images/contact-us.png") top right no-repeat #1693af; }
 
 ul.tabs {
   position: relative;
@@ -86,14 +155,17 @@ ul.tabs {
   padding: 0; }
   ul.tabs li {
     float: right; }
-  ul.tabs li a {
-    background: #838583;
-    border: 1px solid #000;
-    color: #343534; }
-  ul.tabs li a.active {
-    background: none;
-    border: none;
-    color: #838583; }
+    ul.tabs li a {
+      background: #838583;
+      border: 1px solid #000;
+      color: #343534; }
+    ul.tabs li a:hover {
+      background: #93d1de;
+      border: none; }
+    ul.tabs li a.active {
+      background: none;
+      border: none;
+      color: #838583; }
 
 @font-face {
   font-family: 'Museo300';

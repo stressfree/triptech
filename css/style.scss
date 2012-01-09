@@ -1,22 +1,45 @@
 $pagewidth: 980px;
-$pagemargin: 250px;
+$pagemargin: 240px;
 $lightgrey: #838583;
 $darkgrey: #343534;
 $logocolour1: #5abfcf;
 $logocolour2: #93d1de;
 $logocolour3: #1693af;
+$hovercolour: #094856;
 
 html, body {
 	height: 100%;
 	font-family: Helvetica, arial, sans-serif;
+	background: $lightgrey;
+}
+
+h1, h2, h6 {
+	font-family: 'Museo300', Helvetica, arial, sans-serif;
+	color: $darkgrey;
+}
+h3, h4, h5 {
+	font-family: 'Museo500', Helvetica, arial, sans-serif;
+	color: $darkgrey;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.2em;
+}
+h5, h6 {
+	font-size: 1em;
+}
+
+a {
+	color: inherit;
+}
+a:hover {
+	color: $hovercolour;
 }
 
 #logo {
 	display: none;
-}
-
-body {
-	background: $lightgrey;
 }
 
 #body-container {
@@ -61,7 +84,7 @@ body {
 }
 #main-menu {
 	position: relative;
-	top: -205px;
+	top: -203px;
 	width: $pagewidth;
 	
 	ul {
@@ -75,16 +98,53 @@ body {
 		font-size: 18px;
 		padding: 0 13px;
 		border-right: 1px solid #606160;
+		
+		a {
+			text-decoration: none;
+			color: $darkgrey;
+		}
+		a:hover {
+			color: $logocolour1;
+		}
 	}
 	li:first-child {
 		border-right: none;
 	}
-	li a {
-		text-decoration: none;
-		color: $darkgrey;
-	}
-	li a:hover {
-		color: $logocolour1;
+	
+}
+
+
+#footer {
+	border-top: 1px solid $lightgrey;
+	margin: 40px 15px 0 15px;
+	padding: 20px 0 30px 0;
+	font-family: Helvetica, arial, sans-serif;
+	color: $lightgrey;
+	font-size: 0.8em;
+	clear: both;
+	
+	#block-menu-menu-footer-menu {
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			float: right;
+			list-style: none;
+			padding: 0 9px;
+			border-right: 1px solid #606160;
+			a {
+				color: $lightgrey;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+				color: $logocolour1;
+			}
+		}
+		li:first-child {
+			border-right: none;
+		}
 	}
 }
 
@@ -99,12 +159,43 @@ body {
 		display: none;
 	}
 	.field-name-field-welcome {
-		margin: 0 20px 0 $pagemargin;
+		margin: 0 30px 40px $pagemargin;
 		min-height: 200px;
 		font-family: 'Museo300', Helvetica, arial, sans-serif;
 		color: #fff;
 		font-size: 1.1em;
 		line-height: 1.6em;
+	}
+	.group_aboutus, .group_services, .group_contactus {
+		width: 297px;
+		min-height: 265px;
+		float: left;
+		margin: 0 7px;
+		-moz-border-radius: 4px;
+    	-webkit-border-radius: 4px;
+    	-khtml-border-radius: 4px;
+    	border-radius: 4px;
+    	padding: 170px 0 0 0;
+    	
+    	.field-items {
+    		margin: 15px;
+    	}
+    	h3 a {
+    		text-decoration: none;
+    	}    	
+    	h3 a:hover {
+    		text-decoration: underline;
+    	}
+	}
+	.group_aboutus {
+		background: url('../images/about-us.png') top right no-repeat $logocolour1;
+		margin-left: 25px;
+	}
+	.group_services {
+		background: url('../images/services.png') top right no-repeat $logocolour2;
+	}
+	.group_contactus {
+		background: url('../images/contact-us.png') top right no-repeat $logocolour3;
 	}
 }
 
@@ -117,16 +208,20 @@ ul.tabs {
 	padding: 0;
 	li {		
 		float: right;
-	}
-	li a {
-		background: $lightgrey;
-		border: 1px solid #000;
-		color: $darkgrey;
-	}
-	li a.active {
-		background: none;
-		border: none;
-		color: $lightgrey;
+		a {
+			background: $lightgrey;
+			border: 1px solid #000;
+			color: $darkgrey;
+		}
+		a:hover {
+			background: $logocolour2;
+			border: none;
+		}
+		a.active {
+			background: none;
+			border: none;
+			color: $lightgrey;
+		}
 	}
 }
 
