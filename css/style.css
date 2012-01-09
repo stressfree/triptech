@@ -5,17 +5,30 @@ html, body {
 
 h1, h2, h6 {
   font-family: 'Museo300', Helvetica, arial, sans-serif;
-  color: #343534; }
+  font-weight: normal; }
 
 h3, h4, h5 {
   font-family: 'Museo500', Helvetica, arial, sans-serif;
+  font-weight: normal; }
+
+h1, h2 {
+  color: #838583;
+  margin: 0; }
+
+h3, h4, h5, h6 {
   color: #343534; }
 
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
+
 h3 {
-  font-size: 1.4em; }
+  font-size: 1.6em; }
 
 h4 {
-  font-size: 1.2em; }
+  font-size: 1.3em; }
 
 h5, h6 {
   font-size: 1em; }
@@ -30,13 +43,13 @@ a:hover {
   display: none; }
 
 #body-container {
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   width: 980px;
-  padding-top: 50px; }
+  border: 1px solid #000;
+  background: url("../images/grey-bg.png") top left repeat #343534; }
 
 #page {
-  background: url("../images/page-bg.png") top left no-repeat #343534;
-  border: 1px solid #000;
+  background: url("../images/page-bg.png") top left no-repeat;
   padding: 30px 0; }
 
 #site-name {
@@ -131,7 +144,7 @@ a:hover {
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
-  padding: 170px 0 0 0; }
+  padding: 160px 0 0 0; }
   .node-type-homepage .group_aboutus .field-items, .node-type-homepage .group_services .field-items, .node-type-homepage .group_contactus .field-items {
     margin: 15px; }
   .node-type-homepage .group_aboutus h3 a, .node-type-homepage .group_services h3 a, .node-type-homepage .group_contactus h3 a {
@@ -145,6 +158,14 @@ a:hover {
   background: url("../images/services.png") top right no-repeat #93d1de; }
 .node-type-homepage .group_contactus {
   background: url("../images/contact-us.png") top right no-repeat #1693af; }
+
+.node-type-about #content {
+  margin: 0 30px 0 240px; }
+.node-type-about .field-name-field-welcome {
+  font-family: 'Museo300', Helvetica, arial, sans-serif;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.6em; }
 
 ul.tabs {
   position: relative;

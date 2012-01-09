@@ -15,17 +15,31 @@ html, body {
 
 h1, h2, h6 {
 	font-family: 'Museo300', Helvetica, arial, sans-serif;
-	color: $darkgrey;
+	font-weight: normal;
 }
 h3, h4, h5 {
 	font-family: 'Museo500', Helvetica, arial, sans-serif;
-	color: $darkgrey;
+	font-weight: normal;
+}
+h1, h2 {
+    color: $lightgrey;
+    margin: 0;
+}
+h3, h4, h5, h6 {
+    color: $darkgrey;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
 }
 h3 {
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 h4 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 h5, h6 {
 	font-size: 1em;
@@ -43,14 +57,14 @@ a:hover {
 }
 
 #body-container {
-	margin: 0 auto;
+	margin: 50px auto 0 auto;
 	width: $pagewidth;
-	padding-top: 50px;
+	border: 1px solid #000;
+	background: url('../images/grey-bg.png') top left repeat $darkgrey;
 }
 
 #page {
-	background: url('../images/page-bg.png') top left no-repeat $darkgrey;
-	border: 1px solid #000;
+	background: url('../images/page-bg.png') top left no-repeat;
 	padding: 30px 0;
 }
 
@@ -175,7 +189,7 @@ a:hover {
     	-webkit-border-radius: 4px;
     	-khtml-border-radius: 4px;
     	border-radius: 4px;
-    	padding: 170px 0 0 0;
+    	padding: 160px 0 0 0;
     	
     	.field-items {
     		margin: 15px;
@@ -197,6 +211,18 @@ a:hover {
 	.group_contactus {
 		background: url('../images/contact-us.png') top right no-repeat $logocolour3;
 	}
+}
+
+.node-type-about {
+    #content { 
+        margin: 0 30px 0 $pagemargin;
+    }
+    .field-name-field-welcome {
+		font-family: 'Museo300', Helvetica, arial, sans-serif;
+		color: #fff;
+		font-size: 1.1em;
+		line-height: 1.6em;
+    }
 }
 
 ul.tabs {
