@@ -15,6 +15,17 @@ $hovercolour: #094856;
     border-radius: 4px;
 }
 
+@mixin welcome-text($min-height) {
+    .field-name-field-welcome {
+		margin: 0 $rightmargin 40px $leftmargin;
+		min-height: $min-height;
+		font-family: 'Museo300', Helvetica, arial, sans-serif;
+		color: #fff;
+		font-size: 1.1em;
+		line-height: 1.6em;
+	}
+}
+
 
 html, body {
 	height: 100%;
@@ -178,20 +189,14 @@ a:hover {
 }
 
 .node-type-homepage {
+    @include welcome-text(160px);
+    
 	#content-header h1 {
 		display: none;
 	}
-	.field-name-field-welcome {
-		margin: 0 $rightmargin 40px $leftmargin;
-		min-height: 200px;
-		font-family: 'Museo300', Helvetica, arial, sans-serif;
-		color: #fff;
-		font-size: 1.1em;
-		line-height: 1.6em;
-	}
 	.homepage-panel {
 		width: 297px;
-		min-height: 265px;
+		min-height: 290px;
 		float: left;
 		margin: 0 7px;
     	padding: 160px 0 0 0;
@@ -229,18 +234,12 @@ a:hover {
 }
 
 .node-type-about {
+    @include welcome-text(90px);
+    
     #content-header h1 { 
         margin: 0 $rightmargin 0 $leftmargin;
     }
     #main-content {
-	    .field-name-field-welcome {
-    		margin: 0 $rightmargin 0 $leftmargin;
-			font-family: 'Museo300', Helvetica, arial, sans-serif;
-			color: #fff;
-			font-size: 1.1em;
-			line-height: 1.6em;
-			min-height: 125px;
-    	}
     	.director {
     		clear: both;
     	}
@@ -288,6 +287,49 @@ a:hover {
 			color: $hovercolour;
 		}		
     }
+}
+
+.node-type-services {
+	@include welcome-text(120px);
+	
+	#content-header h1 {
+        margin: 0 $rightmargin 0 $leftmargin;
+	}
+    .service {
+		width: 297px;
+		min-height: 400px;
+		float: left;
+		margin: 0 7px;
+    	padding: 10px 0 0 0;
+    	@include rounded-corners;
+    	
+    	.field-items {
+    		margin: 15px;
+    	}
+    	h3 {
+    		font-size: 1.2em;
+    	}
+    	ul {
+    	   margin-left: 1.5em;
+    	}
+    	li {
+    	   margin: 0 0 0.7em 0;
+    	   color: #fff;
+    	}
+    	li span {
+    	   color: #000;
+    	}
+    }
+	.group_service1 {
+		background: $logocolour1;
+		margin-left: 25px;
+	}
+	.group_service2 {
+		background: $logocolour2;
+	}
+	.group_service3 {
+		background: $logocolour3;
+	}
 }
 
 .node-type-standard {

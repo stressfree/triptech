@@ -126,18 +126,18 @@ a:hover {
 .content {
   line-height: 1.4em; }
 
-.node-type-homepage #content-header h1 {
-  display: none; }
 .node-type-homepage .field-name-field-welcome {
   margin: 0 30px 40px 240px;
-  min-height: 200px;
+  min-height: 160px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   color: #fff;
   font-size: 1.1em;
   line-height: 1.6em; }
+.node-type-homepage #content-header h1 {
+  display: none; }
 .node-type-homepage .homepage-panel {
   width: 297px;
-  min-height: 265px;
+  min-height: 290px;
   float: left;
   margin: 0 7px;
   padding: 160px 0 0 0;
@@ -166,15 +166,15 @@ a:hover {
 .node-type-homepage .group_contactus {
   background: url("../images/contact-us.png") top right no-repeat #1693af; }
 
-.node-type-about #content-header h1 {
-  margin: 0 30px 0 240px; }
-.node-type-about #main-content .field-name-field-welcome {
-  margin: 0 30px 0 240px;
+.node-type-about .field-name-field-welcome {
+  margin: 0 30px 40px 240px;
+  min-height: 90px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   color: #fff;
   font-size: 1.1em;
-  line-height: 1.6em;
-  min-height: 125px; }
+  line-height: 1.6em; }
+.node-type-about #content-header h1 {
+  margin: 0 30px 0 240px; }
 .node-type-about #main-content .director {
   clear: both; }
 .node-type-about #main-content .field-type-image {
@@ -212,6 +212,44 @@ a:hover {
 .node-type-about #main-content a.linkedin:hover {
   text-decoration: underline;
   color: #094856; }
+
+.node-type-services .field-name-field-welcome {
+  margin: 0 30px 40px 240px;
+  min-height: 120px;
+  font-family: 'Museo300', Helvetica, arial, sans-serif;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.6em; }
+.node-type-services #content-header h1 {
+  margin: 0 30px 0 240px; }
+.node-type-services .service {
+  width: 297px;
+  min-height: 400px;
+  float: left;
+  margin: 0 7px;
+  padding: 10px 0 0 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px; }
+  .node-type-services .service .field-items {
+    margin: 15px; }
+  .node-type-services .service h3 {
+    font-size: 1.2em; }
+  .node-type-services .service ul {
+    margin-left: 1.5em; }
+  .node-type-services .service li {
+    margin: 0 0 0.7em 0;
+    color: #fff; }
+  .node-type-services .service li span {
+    color: #000; }
+.node-type-services .group_service1 {
+  background: #5abfcf;
+  margin-left: 25px; }
+.node-type-services .group_service2 {
+  background: #93d1de; }
+.node-type-services .group_service3 {
+  background: #1693af; }
 
 .node-type-standard #content-header h1 {
   margin: 0 30px 0 240px; }
