@@ -8,7 +8,6 @@ Recommended modules
 
 - backup_migrate
 - google_analytics
-- jquery_update
 - pathauto
 - site_verify
 - token
