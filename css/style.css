@@ -135,22 +135,29 @@ a:hover {
   color: #fff;
   font-size: 1.1em;
   line-height: 1.6em; }
-.node-type-homepage .group_aboutus, .node-type-homepage .group_services, .node-type-homepage .group_contactus {
+.node-type-homepage .homepage-panel {
   width: 297px;
   min-height: 265px;
   float: left;
   margin: 0 7px;
+  padding: 160px 0 0 0;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
-  border-radius: 4px;
-  padding: 160px 0 0 0; }
-  .node-type-homepage .group_aboutus .field-items, .node-type-homepage .group_services .field-items, .node-type-homepage .group_contactus .field-items {
+  border-radius: 4px; }
+  .node-type-homepage .homepage-panel .field-items {
     margin: 15px; }
-  .node-type-homepage .group_aboutus h3 a, .node-type-homepage .group_services h3 a, .node-type-homepage .group_contactus h3 a {
+  .node-type-homepage .homepage-panel h3 a {
     text-decoration: none; }
-  .node-type-homepage .group_aboutus h3 a:hover, .node-type-homepage .group_services h3 a:hover, .node-type-homepage .group_contactus h3 a:hover {
+  .node-type-homepage .homepage-panel h3 a:hover {
     text-decoration: underline; }
+  .node-type-homepage .homepage-panel a.moreinfo {
+    font-family: 'Museo500', Helvetica, arial, sans-serif;
+    color: #343534;
+    text-decoration: none; }
+  .node-type-homepage .homepage-panel a.moreinfo:hover {
+    text-decoration: underline;
+    color: #094856; }
 .node-type-homepage .group_aboutus {
   background: url("../images/about-us.png") top right no-repeat #5abfcf;
   margin-left: 25px; }
@@ -159,13 +166,95 @@ a:hover {
 .node-type-homepage .group_contactus {
   background: url("../images/contact-us.png") top right no-repeat #1693af; }
 
-.node-type-about #content {
+.node-type-about #content-header h1 {
   margin: 0 30px 0 240px; }
-.node-type-about .field-name-field-welcome {
+.node-type-about #main-content .field-name-field-welcome {
+  margin: 0 30px 0 240px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   color: #fff;
   font-size: 1.1em;
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  min-height: 125px; }
+.node-type-about #main-content .director {
+  clear: both; }
+.node-type-about #main-content .field-type-image {
+  float: left;
+  margin: 10px 15px 15px 70px; }
+  .node-type-about #main-content .field-type-image img {
+    border: 1px solid #838583; }
+.node-type-about #main-content .director-details {
+  min-height: 160px;
+  float: left;
+  width: 710px;
+  padding: 25px 0 10px 0;
+  margin: 0 0 25px 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px; }
+  .node-type-about #main-content .director-details .field-items {
+    margin: 0 15px; }
+.node-type-about #main-content .group_director1_details {
+  background: #5abfcf; }
+.node-type-about #main-content .group_director2_details {
+  background: #93d1de; }
+.node-type-about #main-content .group_director3_details {
+  background: #1693af; }
+.node-type-about #main-content .field-name-field-director1-name, .node-type-about #main-content .field-name-field-director2-name, .node-type-about #main-content .field-name-field-director3-name {
+  font-family: 'Museo500', Helvetica, arial, sans-serif;
+  color: #343534;
+  font-size: 1.6em;
+  margin: 0 0 0.5em 0; }
+.node-type-about #main-content a.linkedin {
+  font-family: 'Museo500', Helvetica, arial, sans-serif;
+  color: #343534;
+  text-decoration: none; }
+.node-type-about #main-content a.linkedin:hover {
+  text-decoration: underline;
+  color: #094856; }
+
+.node-type-standard #content-header h1 {
+  margin: 0 30px 0 240px; }
+.node-type-standard #main-content {
+  margin: 0 30px 0 240px;
+  min-height: 200px;
+  color: #fff; }
+  .node-type-standard #main-content a {
+    color: #5abfcf; }
+  .node-type-standard #main-content a:hover {
+    color: #094856; }
+  .node-type-standard #main-content blockquote {
+    background: #93d1de;
+    padding: 15px;
+    margin: 2em 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px; }
+    .node-type-standard #main-content blockquote a {
+      color: #343534; }
+
+.page-user #main {
+  margin: 0 30px 0 240px; }
+.page-user ul.tabs {
+  margin: 1em 0;
+  position: static; }
+  .page-user ul.tabs li {
+    float: none;
+    display: inline; }
+.page-user .form-item label {
+  font-family: 'Museo500', Helvetica, arial, sans-serif;
+  color: #fff;
+  font-weight: normal; }
+.page-user .form-item .description {
+  color: #838583; }
+.page-user .profile {
+  background: #93d1de;
+  padding: 15px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px; }
 
 ul.tabs {
   position: relative;

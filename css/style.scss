@@ -1,11 +1,20 @@
 $pagewidth: 980px;
-$pagemargin: 240px;
+$leftmargin: 240px;
+$rightmargin: 30px;
 $lightgrey: #838583;
 $darkgrey: #343534;
 $logocolour1: #5abfcf;
 $logocolour2: #93d1de;
 $logocolour3: #1693af;
 $hovercolour: #094856;
+
+@mixin rounded-corners {
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
 
 html, body {
 	height: 100%;
@@ -69,7 +78,7 @@ a:hover {
 }
 
 #site-name {
-	margin: 0 0 0 $pagemargin;
+	margin: 0 0 0 $leftmargin;
 	font-family: 'Museo300', Helvetica, arial, sans-serif;
 	height: 140px;
 	a {
@@ -173,23 +182,20 @@ a:hover {
 		display: none;
 	}
 	.field-name-field-welcome {
-		margin: 0 30px 40px $pagemargin;
+		margin: 0 $rightmargin 40px $leftmargin;
 		min-height: 200px;
 		font-family: 'Museo300', Helvetica, arial, sans-serif;
 		color: #fff;
 		font-size: 1.1em;
 		line-height: 1.6em;
 	}
-	.group_aboutus, .group_services, .group_contactus {
+	.homepage-panel {
 		width: 297px;
 		min-height: 265px;
 		float: left;
 		margin: 0 7px;
-		-moz-border-radius: 4px;
-    	-webkit-border-radius: 4px;
-    	-khtml-border-radius: 4px;
-    	border-radius: 4px;
     	padding: 160px 0 0 0;
+    	@include rounded-corners;
     	
     	.field-items {
     		margin: 15px;
@@ -199,7 +205,16 @@ a:hover {
     	}    	
     	h3 a:hover {
     		text-decoration: underline;
-    	}
+    	}    	
+		a.moreinfo {
+			font-family: 'Museo500', Helvetica, arial, sans-serif;
+			color: $darkgrey;
+			text-decoration: none;
+		}
+		a.moreinfo:hover {
+			text-decoration: underline;
+			color: $hovercolour;
+		}
 	}
 	.group_aboutus {
 		background: url('../images/about-us.png') top right no-repeat $logocolour1;
@@ -214,15 +229,122 @@ a:hover {
 }
 
 .node-type-about {
-    #content { 
-        margin: 0 30px 0 $pagemargin;
+    #content-header h1 { 
+        margin: 0 $rightmargin 0 $leftmargin;
     }
-    .field-name-field-welcome {
-		font-family: 'Museo300', Helvetica, arial, sans-serif;
+    #main-content {
+	    .field-name-field-welcome {
+    		margin: 0 $rightmargin 0 $leftmargin;
+			font-family: 'Museo300', Helvetica, arial, sans-serif;
+			color: #fff;
+			font-size: 1.1em;
+			line-height: 1.6em;
+			min-height: 125px;
+    	}
+    	.director {
+    		clear: both;
+    	}
+    	.field-type-image {
+    		float: left;
+    		margin: 10px 15px 15px 70px;
+    		img {
+    			border: 1px solid $lightgrey;
+    		}
+    	}
+		.director-details {
+			min-height: 160px;
+    		float: left;
+    		width: $pagewidth - $leftmargin - $rightmargin;
+    		padding: 25px 0 10px 0;
+    		margin: 0 0 25px 0;
+    		@include rounded-corners;
+    		
+    		.field-items {
+    			margin: 0 15px;
+    		}
+		}
+		.group_director1_details {
+			background: $logocolour1;
+		}
+		.group_director2_details {
+			background: $logocolour2;
+		}
+		.group_director3_details {
+			background: $logocolour3;
+		}
+		.field-name-field-director1-name, .field-name-field-director2-name, .field-name-field-director3-name {
+			font-family: 'Museo500', Helvetica, arial, sans-serif;
+			color: $darkgrey;
+			font-size: 1.6em;
+			margin: 0 0 0.5em 0;
+		}
+		a.linkedin {
+			font-family: 'Museo500', Helvetica, arial, sans-serif;
+			color: $darkgrey;
+			text-decoration: none;
+		}
+		a.linkedin:hover {
+			text-decoration: underline;
+			color: $hovercolour;
+		}		
+    }
+}
+
+.node-type-standard {
+	#content-header h1 { 
+        margin: 0 $rightmargin 0 $leftmargin;
+    }
+	#main-content {
+		margin: 0 $rightmargin 0 $leftmargin;
+		min-height: 200px;
 		color: #fff;
-		font-size: 1.1em;
-		line-height: 1.6em;
-    }
+		
+		a {
+			color: $logocolour1;
+		}
+		a:hover {
+			color: $hovercolour;
+		}
+		blockquote {
+			background: $logocolour2;
+			padding: 15px;
+			margin: 2em 0;
+			@include rounded-corners;
+		
+			a {
+				color: $darkgrey;
+			}
+		}
+	}
+}
+
+.page-user {
+	#main {
+		margin: 0 $rightmargin 0 $leftmargin;
+	}
+	ul.tabs {
+		margin: 1em 0;
+		position: static;
+		li {
+			float: none;
+			display: inline;
+		}
+	}
+	.form-item {
+		label {
+			font-family: 'Museo500', Helvetica, arial, sans-serif;
+			color: #fff;
+			font-weight: normal;
+		}
+		.description {
+			color: $lightgrey;
+		}
+	}
+	.profile {
+		background: $logocolour2;		
+    	padding: 15px;
+    	@include rounded-corners;
+	}
 }
 
 ul.tabs {
