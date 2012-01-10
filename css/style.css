@@ -234,6 +234,38 @@ a:hover {
     .node-type-standard #main-content blockquote a {
       color: #343534; }
 
+.page-locationmap #content-header h1 {
+  margin: 0 30px 0 240px; }
+.page-locationmap #main-content {
+  margin: 0 30px 0 240px; }
+  .page-locationmap #main-content h3 {
+    margin: 0.6em 0 0.3em 0; }
+  .page-locationmap #main-content .email, .page-locationmap #main-content .twitter, .page-locationmap #main-content .addresses {
+    padding: 15px;
+    margin: 15px 0 10px 0;
+    min-height: 100px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px; }
+  .page-locationmap #main-content .email {
+    background: url("../images/email.png") top right no-repeat #5abfcf; }
+  .page-locationmap #main-content .twitter {
+    background: url("../images/twitter.png") top right no-repeat #93d1de; }
+  .page-locationmap #main-content .addresses {
+    background: url("../images/postal.png") top right no-repeat #1693af; }
+    .page-locationmap #main-content .addresses .physical {
+      float: left;
+      width: 280px; }
+    .page-locationmap #main-content .addresses .postal {
+      margin-bottom: 2em; }
+  .page-locationmap #main-content #locationmap_map {
+    width: 500px;
+    margin: 15px 0 0 0;
+    border: 1px solid #838583; }
+.page-locationmap #locationmap-in-place-edit-form {
+  display: none; }
+
 .page-user #main {
   margin: 0 30px 0 240px; }
 .page-user ul.tabs {

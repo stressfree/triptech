@@ -318,6 +318,48 @@ a:hover {
 	}
 }
 
+.page-locationmap {
+	#content-header h1 { 
+        margin: 0 $rightmargin 0 $leftmargin;
+    }
+    #main-content {
+		margin: 0 $rightmargin 0 $leftmargin;
+		h3 {
+			margin: 0.6em 0 0.3em 0;
+		}
+		.email, .twitter, .addresses {
+			padding: 15px;
+			margin: 15px 0 10px 0;
+			min-height: 100px;
+    		@include rounded-corners;
+		}
+		.email {
+			background: url('../images/email.png') top right no-repeat $logocolour1;
+		}
+		.twitter {
+			background: url('../images/twitter.png') top right no-repeat $logocolour2;
+		}
+		.addresses {
+			background: url('../images/postal.png') top right no-repeat $logocolour3;
+			.physical {
+				float: left;
+				width: 280px;
+			}
+			.postal {
+				margin-bottom: 2em;
+			}
+		}
+		#locationmap_map {
+			width: 500px;
+			margin: 15px 0 0 0;
+			border: 1px solid $lightgrey;
+		}
+	}
+	#locationmap-in-place-edit-form {
+		display: none;
+	}
+}
+
 .page-user {
 	#main {
 		margin: 0 $rightmargin 0 $leftmargin;
