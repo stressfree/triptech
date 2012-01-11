@@ -34,10 +34,10 @@ h5, h6 {
   font-size: 1em; }
 
 a {
-  color: inherit; }
+  color: #343534; }
 
 a:hover {
-  color: #094856; }
+  color: #b84f4f; }
 
 #logo {
   display: none; }
@@ -157,7 +157,7 @@ a:hover {
     text-decoration: none; }
   .node-type-homepage .homepage-panel a.moreinfo:hover {
     text-decoration: underline;
-    color: #094856; }
+    color: #b84f4f; }
 .node-type-homepage .group_aboutus {
   background: url("../images/about-us.png") top right no-repeat #5abfcf;
   margin-left: 25px; }
@@ -179,15 +179,16 @@ a:hover {
   clear: both; }
 .node-type-about #main-content .field-type-image {
   float: left;
-  margin: 10px 15px 15px 70px; }
+  margin: 0;
+  padding: 25px 15px 15px 70px; }
   .node-type-about #main-content .field-type-image img {
     border: 1px solid #838583; }
 .node-type-about #main-content .director-details {
   min-height: 160px;
   float: left;
   width: 710px;
-  padding: 25px 0 10px 0;
-  margin: 0 0 25px 0;
+  padding: 15px 0 10px 0;
+  margin: 15px 0 0 0;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
@@ -211,7 +212,7 @@ a:hover {
   text-decoration: none; }
 .node-type-about #main-content a.linkedin:hover {
   text-decoration: underline;
-  color: #094856; }
+  color: #b84f4f; }
 
 .node-type-services .field-name-field-welcome {
   margin: 0 30px 40px 240px;
@@ -260,7 +261,7 @@ a:hover {
   .node-type-standard #main-content a {
     color: #5abfcf; }
   .node-type-standard #main-content a:hover {
-    color: #094856; }
+    color: #b84f4f; }
   .node-type-standard #main-content blockquote {
     background: #93d1de;
     padding: 15px;
@@ -280,7 +281,7 @@ a:hover {
     margin: 0.6em 0 0.3em 0; }
   .page-locationmap #main-content .email, .page-locationmap #main-content .twitter, .page-locationmap #main-content .addresses {
     padding: 15px;
-    margin: 15px 0 10px 0;
+    margin: 15px 0 0 0;
     min-height: 100px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;

@@ -6,7 +6,7 @@ $darkgrey: #343534;
 $logocolour1: #5abfcf;
 $logocolour2: #93d1de;
 $logocolour3: #1693af;
-$hovercolour: #094856;
+$hovercolour: #b84f4f;
 
 @mixin rounded-corners {
 	-moz-border-radius: 4px;
@@ -66,7 +66,7 @@ h5, h6 {
 }
 
 a {
-	color: inherit;
+	color: $darkgrey;
 }
 a:hover {
 	color: $hovercolour;
@@ -245,7 +245,8 @@ a:hover {
     	}
     	.field-type-image {
     		float: left;
-    		margin: 10px 15px 15px 70px;
+    		margin: 0;
+    		padding: 25px 15px 15px 70px;
     		img {
     			border: 1px solid $lightgrey;
     		}
@@ -254,8 +255,8 @@ a:hover {
 			min-height: 160px;
     		float: left;
     		width: $pagewidth - $leftmargin - $rightmargin;
-    		padding: 25px 0 10px 0;
-    		margin: 0 0 25px 0;
+    		padding: 15px 0 10px 0;
+    		margin: 15px 0 0 0;
     		@include rounded-corners;
     		
     		.field-items {
@@ -371,7 +372,7 @@ a:hover {
 		}
 		.email, .twitter, .addresses {
 			padding: 15px;
-			margin: 15px 0 10px 0;
+			margin: 15px 0 0 0;
 			min-height: 100px;
     		@include rounded-corners;
 		}
