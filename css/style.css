@@ -112,7 +112,7 @@ a:hover {
   #footer #block-menu-menu-footer-menu li {
     float: right;
     list-style: none;
-    padding: 0 9px;
+    padding: 0 11px 0 9px;
     border-right: 1px solid #606160; }
     #footer #block-menu-menu-footer-menu li a {
       color: #838583;
