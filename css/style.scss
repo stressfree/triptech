@@ -5,7 +5,7 @@ $lightgrey: #838583;
 $darkgrey: #343534;
 $logocolour1: #5abfcf;
 $logocolour2: #93d1de;
-$logocolour3: #1693af;
+$logocolour3: #25adcb;
 $hovercolour: #b84f4f;
 
 @mixin rounded-corners {
@@ -17,7 +17,7 @@ $hovercolour: #b84f4f;
 
 @mixin welcome-text($min-height) {
     .field-name-field-welcome {
-		margin: 0 $rightmargin 40px $leftmargin;
+		margin: 0 $rightmargin 10px $leftmargin;
 		min-height: $min-height;
 		font-family: 'Museo300', Helvetica, arial, sans-serif;
 		color: #fff;
@@ -234,7 +234,7 @@ a:hover {
 }
 
 .node-type-about {
-    @include welcome-text(90px);
+    @include welcome-text(140px);
     
     #content-header h1 { 
         margin: 0 $rightmargin 0 $leftmargin;
@@ -286,12 +286,28 @@ a:hover {
 		a.linkedin:hover {
 			text-decoration: underline;
 			color: $hovercolour;
-		}		
+		}
+		strong.highlight {
+			font-size: 2.3em;
+			font-weight: normal;
+			font-family: 'Museo500', Helvetica, arial, sans-serif;
+			padding: 0 0.1em;
+		}
+		p.emphasised {
+			margin-bottom: 1.2em;
+			font-style: italic;
+			font-size: 1.2em;
+			color: $darkgrey;
+			a {
+				color: $darkgrey;
+				text-decoration: none;
+			}
+		}
     }
 }
 
 .node-type-services {
-	@include welcome-text(120px);
+	@include welcome-text(140px);
 	
 	#content-header h1 {
         margin: 0 $rightmargin 0 $leftmargin;

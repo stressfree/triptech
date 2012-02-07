@@ -127,7 +127,7 @@ a:hover {
   line-height: 1.4em; }
 
 .node-type-homepage .field-name-field-welcome {
-  margin: 0 30px 40px 240px;
+  margin: 0 30px 10px 240px;
   min-height: 160px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   color: #fff;
@@ -164,11 +164,11 @@ a:hover {
 .node-type-homepage .group_services {
   background: url("../images/services.png") top right no-repeat #93d1de; }
 .node-type-homepage .group_contactus {
-  background: url("../images/contact-us.png") top right no-repeat #1693af; }
+  background: url("../images/contact-us.png") top right no-repeat #25adcb; }
 
 .node-type-about .field-name-field-welcome {
-  margin: 0 30px 40px 240px;
-  min-height: 90px;
+  margin: 0 30px 10px 240px;
+  min-height: 140px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   color: #fff;
   font-size: 1.1em;
@@ -200,7 +200,7 @@ a:hover {
 .node-type-about #main-content .group_director2_details {
   background: #93d1de; }
 .node-type-about #main-content .group_director3_details {
-  background: #1693af; }
+  background: #25adcb; }
 .node-type-about #main-content .field-name-field-director1-name, .node-type-about #main-content .field-name-field-director2-name, .node-type-about #main-content .field-name-field-director3-name {
   font-family: 'Museo500', Helvetica, arial, sans-serif;
   color: #343534;
@@ -213,10 +213,23 @@ a:hover {
 .node-type-about #main-content a.linkedin:hover {
   text-decoration: underline;
   color: #b84f4f; }
+.node-type-about #main-content strong.highlight {
+  font-size: 2.3em;
+  font-weight: normal;
+  font-family: 'Museo500', Helvetica, arial, sans-serif;
+  padding: 0 0.1em; }
+.node-type-about #main-content p.emphasised {
+  margin-bottom: 1.2em;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #343534; }
+  .node-type-about #main-content p.emphasised a {
+    color: #343534;
+    text-decoration: none; }
 
 .node-type-services .field-name-field-welcome {
-  margin: 0 30px 40px 240px;
-  min-height: 120px;
+  margin: 0 30px 10px 240px;
+  min-height: 140px;
   font-family: 'Museo300', Helvetica, arial, sans-serif;
   color: #fff;
   font-size: 1.1em;
@@ -250,7 +263,7 @@ a:hover {
 .node-type-services .group_service2 {
   background: #93d1de; }
 .node-type-services .group_service3 {
-  background: #1693af; }
+  background: #25adcb; }
 
 .node-type-standard #content-header h1 {
   margin: 0 30px 0 240px; }
@@ -292,7 +305,7 @@ a:hover {
   .page-locationmap #main-content .twitter {
     background: url("../images/twitter.png") top right no-repeat #93d1de; }
   .page-locationmap #main-content .addresses {
-    background: url("../images/postal.png") top right no-repeat #1693af; }
+    background: url("../images/postal.png") top right no-repeat #25adcb; }
     .page-locationmap #main-content .addresses .physical {
       float: left;
       width: 280px; }

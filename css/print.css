@@ -1,0 +1,82 @@
+html, body {
+  background: #fff;
+  font-size: 10pt; }
+
+#body-container {
+  border: none;
+  width: 95%;
+  background: none;
+  margin: 0 0 0 20px; }
+
+#page {
+  background: none; }
+
+#header #logo {
+  display: block;
+  margin: 0 0 2em 0;
+  text-align: center; }
+#header #name-and-slogan, #header #navigation {
+  display: none; }
+
+#footer {
+  padding-bottom: 5px; }
+  #footer #block-menu-menu-footer-menu {
+    display: none; }
+
+#page {
+  padding: 0; }
+
+.node-type-homepage .field-name-field-welcome,
+.node-type-about .field-name-field-welcome,
+.node-type-services .field-name-field-welcome {
+  color: #000;
+  margin: 0 0 10px 0px;
+  min-height: 0;
+  width: 95%; }
+
+.node-type-homepage .homepage-panel {
+  width: 32%;
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  background: none!important; }
+
+.node-type-about #content-header h1 {
+  margin-left: 0; }
+.node-type-about #main-content .director-details {
+  width: auto; }
+.node-type-about #main-content .group_director1_details, .node-type-about #main-content .group_director2_details, .node-type-about #main-content .group_director3_details {
+  background: #fff;
+  margin: -180px 0 0 170px; }
+.node-type-about #main-content .field-type-image {
+  padding: 25px 15px 15px 0; }
+
+.node-type-services #content-header h1 {
+  margin-left: 0; }
+.node-type-services .service {
+  width: 32%;
+  margin: 0;
+  min-height: 0;
+  background: none!important; }
+  .node-type-services .service .field-items {
+    margin: 0; }
+  .node-type-services .service ul {
+    margin-left: 1.2em; }
+    .node-type-services .service ul li {
+      color: #333; }
+
+.page-locationmap #content-header h1 {
+  margin-left: 0; }
+.page-locationmap #main-content {
+  margin-left: 0; }
+  .page-locationmap #main-content .email, .page-locationmap #main-content .twitter, .page-locationmap #main-content .addresses {
+    background: none;
+    min-height: 0;
+    padding: 0; }
+    .page-locationmap #main-content .email h3, .page-locationmap #main-content .twitter h3, .page-locationmap #main-content .addresses h3 {
+      margin-top: 0; }
+  .page-locationmap #main-content #locationmap_map {
+    height: 350px!important; }
+
+.tabs, #toolbar, .linkedin, .moreinfo {
+  display: none; }
