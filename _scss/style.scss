@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 $pagewidth: 980px;
 $leftmargin: 240px;
 $rightmargin: 30px;
@@ -7,13 +9,6 @@ $logocolour1: #5abfcf;
 $logocolour2: #93d1de;
 $logocolour3: #25adcb;
 $hovercolour: #b84f4f;
-
-@mixin rounded-corners {
-	-moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -khtml-border-radius: 4px;
-    border-radius: 4px;
-}
 
 @mixin welcome-text($min-height) {
     .field-name-field-welcome {
@@ -195,12 +190,12 @@ a:hover {
 		display: none;
 	}
 	.homepage-panel {
+        @include border-radius(4px);
 		width: 297px;
 		min-height: 360px;
 		float: left;
 		margin: 0 7px;
     	padding: 160px 0 0 0;
-    	@include rounded-corners;
     	
     	.field-items {
     		margin: 15px;
@@ -221,14 +216,14 @@ a:hover {
 			color: $hovercolour;
 		}
 	}
-	.group_aboutus {
+	.group-aboutus {
 		background: url('../images/about-us.png') top right no-repeat $logocolour1;
 		margin-left: 25px;
 	}
-	.group_services {
+	.group-services {
 		background: url('../images/services.png') top right no-repeat $logocolour2;
 	}
-	.group_contactus {
+	.group-contactus {
 		background: url('../images/contact-us.png') top right no-repeat $logocolour3;
 	}
 }
@@ -252,24 +247,24 @@ a:hover {
     		}
     	}
 		.director-details {
+    		@include border-radius(4px);
 			min-height: 160px;
     		float: left;
     		width: $pagewidth - $leftmargin - $rightmargin;
     		padding: 15px 0 10px 0;
     		margin: 15px 0 0 0;
-    		@include rounded-corners;
     		
     		.field-items {
     			margin: 0 15px;
     		}
 		}
-		.group_director1_details {
+		.group-director1-details {
 			background: $logocolour1;
 		}
-		.group_director2_details {
+		.group-director2-details {
 			background: $logocolour2;
 		}
-		.group_director3_details {
+		.group-director3-details {
 			background: $logocolour3;
 		}
 		.field-name-field-director1-name, .field-name-field-director2-name, .field-name-field-director3-name {
@@ -313,12 +308,12 @@ a:hover {
         margin: 0 $rightmargin 0 $leftmargin;
 	}
     .service {
+    	@include border-radius(4px);
 		width: 297px;
 		min-height: 400px;
 		float: left;
 		margin: 0 7px;
     	padding: 10px 0 0 0;
-    	@include rounded-corners;
     	
     	.field-items {
     		margin: 15px;
@@ -337,14 +332,14 @@ a:hover {
     	   color: #000;
     	}
     }
-	.group_service1 {
+	.group-service1 {
 		background: $logocolour1;
 		margin-left: 25px;
 	}
-	.group_service2 {
+	.group-service2 {
 		background: $logocolour2;
 	}
-	.group_service3 {
+	.group-service3 {
 		background: $logocolour3;
 	}
 }
@@ -365,10 +360,10 @@ a:hover {
 			color: $hovercolour;
 		}
 		blockquote {
+		    @include border-radius(4px);
 			background: $logocolour2;
 			padding: 15px;
 			margin: 2em 0;
-			@include rounded-corners;
 		
 			a {
 				color: $darkgrey;
@@ -387,10 +382,10 @@ a:hover {
 			margin: 0.6em 0 0.3em 0;
 		}
 		.email, .twitter, .addresses {
+    		@include border-radius(4px);
 			padding: 15px;
 			margin: 15px 0 0 0;
 			min-height: 100px;
-    		@include rounded-corners;
 		}
 		.email {
 			background: url('../images/email.png') top right no-repeat $logocolour1;
@@ -408,7 +403,7 @@ a:hover {
 				margin-bottom: 2em;
 			}
 		}
-		#locationmap_map {
+		#locationmap-map {
 			width: 500px;
 			margin: 15px 0 0 0;
 			border: 1px solid $lightgrey;
@@ -442,9 +437,9 @@ a:hover {
 		}
 	}
 	.profile {
-		background: $logocolour2;		
+		background: $logocolour2;
+		@include border-radius(4px);		
     	padding: 15px;
-    	@include rounded-corners;
 	}
 }
 
